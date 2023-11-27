@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { AppService } from 'src/service/app.service';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Jest';
+
+  constructor(private appService: AppService) {
+  }
 }
